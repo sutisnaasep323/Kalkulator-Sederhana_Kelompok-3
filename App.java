@@ -16,9 +16,7 @@ public class App {
             // Menampilkan menu operasi
             System.out.println("Pilih operasi:");
             System.out.println("1. Pembagian");
-            System.out.println("2. Pengurangan");
-            System.out.println("3. Penjumlahan");
-            System.out.println("4. Perkalian");
+            System.out.println("2. Perkalian");
             
             // Meminta pengguna memilih operasi
             System.out.print("Masukkan nomor operasi: ");
@@ -47,11 +45,10 @@ public class App {
                 hasil = bagi(angka1, angka2);
                 break;
             case 2:
-                
+                hasil = kali(angka1, angka2);
+                break;
             case 3:
-                
             case 4:
-                
             default:
                 System.out.println("Operasi tidak valid.");
         }
@@ -67,5 +64,10 @@ public class App {
             System.out.println("Error: Pembagian dengan nol tidak diizinkan.");
             return Double.NaN; // NaN (Not a Number) sebagai nilai default jika terjadi kesalahan
         }
+    }
+
+    // Method untuk mengalikan dua angka
+    static double kali(double a, double b) {
+        return a * b;
     }
 }
