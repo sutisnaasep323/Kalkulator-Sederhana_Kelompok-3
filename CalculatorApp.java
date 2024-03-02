@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class App {
+public class CalculatorApp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         char pilihan;
@@ -77,17 +77,12 @@ public class App {
         return a * b;
     }
 
+   // Method untuk menjumlahkan dua angka
     static double penjumlahan(double a, double b){
         return a + b;
     }
 
-    static double penjumlahan(double a, double b, double c){
-        return a + b + c;
-    }
-
-    static double penjumlahan(double a, double b, double c, double d){
-        return a + b + c + d;
-    }
+    // Method untuk mengurangi dua angka
     static double pengurangan(double a, double b) {
         return a - b;
     }
