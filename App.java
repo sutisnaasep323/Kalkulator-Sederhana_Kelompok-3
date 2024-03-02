@@ -17,6 +17,7 @@ public class App {
             System.out.println("Pilih operasi:");
             System.out.println("1. Pembagian");
             System.out.println("2. Perkalian");
+            System.out.println("3. Penjumlahan");
             
             // Meminta pengguna memilih operasi
             System.out.print("Masukkan nomor operasi: ");
@@ -48,11 +49,12 @@ public class App {
                 hasil = kali(angka1, angka2);
                 break;
             case 3:
+                hasil = penjumlahan(angka1, angka2);
+                break;
             case 4:
             default:
                 System.out.println("Operasi tidak valid.");
         }
-
         return hasil;
     }
 
@@ -69,5 +71,17 @@ public class App {
     // Method untuk mengalikan dua angka
     static double kali(double a, double b) {
         return a * b;
+    }
+
+    static double penjumlahan(double a, double b){
+        return a + b;
+    }
+
+    static double penjumlahan(double a, double b, double c){
+        return a + b + c;
+    }
+
+    static double penjumlahan(double a, double b, double c, double d){
+        return a + b + c + d;
     }
 }
