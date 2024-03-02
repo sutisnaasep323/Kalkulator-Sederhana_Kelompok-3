@@ -18,6 +18,7 @@ public class App {
             System.out.println("1. Pembagian");
             System.out.println("2. Perkalian");
             System.out.println("3. Penjumlahan");
+            System.out.println("4. Pengurangan");
             
             // Meminta pengguna memilih operasi
             System.out.print("Masukkan nomor operasi: ");
@@ -52,6 +53,9 @@ public class App {
                 hasil = penjumlahan(angka1, angka2);
                 break;
             case 4:
+                hasil = pengurangan(angka1, angka2);
+                break;
+            case 5:
             default:
                 System.out.println("Operasi tidak valid.");
         }
@@ -83,5 +87,8 @@ public class App {
 
     static double penjumlahan(double a, double b, double c, double d){
         return a + b + c + d;
+    }
+    static double pengurangan(double a, double b) {
+        return a - b;
     }
 }
